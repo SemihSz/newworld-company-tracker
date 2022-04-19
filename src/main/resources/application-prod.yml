@@ -1,0 +1,26 @@
+logging:
+  level.*:
+    org.springframework.web.client.RestTemplate: DEBUG
+    com.crypto: DEBUG
+  file:
+    name: logs/trading-crypto.log
+
+server:
+  port: 8096
+  servlet:
+    context-path: /new-world
+spring:
+  jpa:
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/newworldcompanytracker
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: pass
+
+cache:
+  expire:
+    time: 5

@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: newworld-company-tracker
+  profiles:
+    active: dev
